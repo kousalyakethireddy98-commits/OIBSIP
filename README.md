@@ -1,28 +1,30 @@
-# Customer Segmentation
+# Data Cleaning - Titanic Dataset
 
 ## Internship
 Oasis Infobyte - Data Analytics
 
 ## Task
-Level 1 - Task 2: Customer Segmentation
+Level 1 - Task 3: Cleaning Data
 
 ## Objective
-To segment customers based on their annual income and spending score using the K-Means clustering algorithm.
+To clean the Titanic dataset and prepare it for further analysis.
 
-## Dataset
-Mall Customers dataset containing customer information such as age, annual income, and spending score.
+## Data Cleaning Steps
+1. Inspected the dataset structure and data types.
+2. Identified missing values.
+3. Filled missing Age values using the median.
+4. Filled missing Cabin values with "Unknown".
+5. Filled missing Embarked values using the mode.
+6. Checked and removed duplicate rows.
+7. Verified numerical data types.
+8. Detected Fare outliers using the IQR method.
+9. Retained legitimate Fare outliers.
+10. Verified the cleaned dataset.
+11. Saved the cleaned dataset as cleaned_titanic.csv.
 
-## Analysis Performed
-- Loaded and inspected the customer dataset.
-- Checked dataset information and basic statistics.
-- Checked missing values and duplicate records.
-- Analyzed age distribution.
-- Analyzed annual income distribution.
-- Selected Annual Income and Spending Score for clustering.
-- Used the Elbow Method to identify a suitable number of clusters.
-- Applied K-Means clustering.
-- Visualized the customer segments.
-- Compared average income and spending score across clusters.
+## Visualizations
+- Missing Values Before Cleaning
+- Fare Distribution After Cleaning
 
 ## Tools Used
 - Python
@@ -30,13 +32,10 @@ Mall Customers dataset containing customer information such as age, annual incom
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
 - Jupyter Notebook
 
 ## Files
-- Customer_Segmentation_Task2.ipynb - Jupyter Notebook containing the complete analysis.
-- Mall_Customers.csv - Original dataset.
-- customer_segments.csv - Dataset with assigned customer clusters.
-- screenshots/ - Project output screenshots.
-
-
+- Data_Cleaning_Task3.ipynb - Complete data cleaning notebook
+- train.csv - Original dataset
+- cleaned_titanic.csv - Cleaned dataset
+- screenshots/ - Project output screenshots
